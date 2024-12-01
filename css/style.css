@@ -1,0 +1,41 @@
+/* body{
+    background-color: #111;
+    
+} */
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+
+    
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #fec260;
+    bottom:1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+h1:hover::before{
+    height: 65%;
+    transition: all 0.5s ease-in-out;
+}
+
+.border-dashed{
+    border-top: 1px dashed #352e28;
+    /* padding-top: 500px; */
+    border-bottom: 1px dashed #352e28;        
+    
+
+}  
